@@ -1,0 +1,15 @@
+#version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./:/var/www/html
+    ports:
+    #alteração porta 9100 (verificar env)
+      - "9100:80"
+    extra_hosts:
+      - host.docker.internal:host-gateway

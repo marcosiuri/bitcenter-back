@@ -8,6 +8,6 @@ class AuthController extends Controller
 {
     public function login(Request $request)
     {
-        return response()->json(['message' => 'Login bem-sucedido!']);
+        return response()->json(['message' => 'Login bem-sucedido!']); 
     }
 }

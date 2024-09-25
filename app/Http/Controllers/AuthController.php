@@ -10,4 +10,9 @@ class AuthController extends Controller
     {
         return response()->json(['message' => 'Login bem-sucedido!']); 
     }
+
+    public function cadastro(Request $request)
+    {
+        return response()->json(['message' => 'Login bem-sucedido!']); 
+    }
 }
